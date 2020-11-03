@@ -1,11 +1,11 @@
 # json-schema-defined-mapper
 
-This module creates a mapper function using [JMESPath](http://jmespath.org) to convert an object to a JSON the schema defines
+This module creates a mapper function using [JMESPath](http://jmespath.org) to convert an object to a JSON the schema defines.
 You can write a JMESPath expression in the `description` to extract the defined data against the input data.
 A JMESPath expression can be describe in [Extended Markdown's](https://www.markdownguide.org/extended-syntax/#fenced-code-blocks) code block syntax with th prefix "`query:`".
-The body of the expression must be enclosed a single backtick (\`) or three backtick (\`\`\`).
+The body of the expression must be enclosed a single backtick (\`) or three backticks (\`\`\`).
 
-JSON schema example:
+The JSON schema example:
 
 ```json
 {
@@ -27,7 +27,7 @@ JSON schema example:
 }
 ```
 
-To create a mapper function and execute the mapper against the input data:
+To create a mapper function and execute the mapper against the input object:
 
 ```js
 const createMapper = require('json-schema-defined-mapper');
@@ -97,7 +97,7 @@ console.log(houseList(
 ```
 
 In the above example, the expression `[*]` at the first layer extracts each element from the input array.
-The expression `pet.house` at the second layer evaluate for each element (object) from the first layer.
+The expression `pet.house` at the second layer is evaluated for each element (object) from the first layer.
 
 ## oneOf, anyOf, and allOf
 
