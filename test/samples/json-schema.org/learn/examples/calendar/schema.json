@@ -1,0 +1,68 @@
+{
+  "title": "https://json-schema.org/learn/examples/calendar.schema.json",
+  "description": "A representation of an event",
+  "type": "object",
+  "required": [ "dtstart", "summary" ],
+  "properties": {
+    "dtstart": {
+      "type": "string",
+      "description": "Event starting time (query:`Dt.Start`)"
+    },
+    "dtend": {
+      "type": "string",
+      "description": "Event ending time (query:`Dt.End`)"
+    },
+    "summary": {
+      "description": "(query:`Summary`)",
+      "type": "string"
+    },
+    "location": {
+      "description": "(query:`Location`)",
+      "type": "string"
+    },
+    "url": {
+      "description": "(query:`URL`)",
+      "type": "string"
+    },
+    "duration": {
+      "type": "string",
+      "description": "Event duration (query:`Duration`)"
+    },
+    "rdate": {
+      "type": "string",
+      "description": "Recurrence date"
+    },
+    "rrule": {
+      "type": "string",
+      "description": "Recurrence rule"
+    },
+    "category": {
+      "description": "(query:`Category`)",
+      "type": "string"
+    },
+    "description": {
+      "description": "(query:`Description`)",
+      "type": "string"
+    },
+    "geo": {
+      "title": "Longitude and Latitude Values",
+      "description": "A geographical coordinate.",
+      "required": [ "latitude", "longitude" ],
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "description": "(query:`Geo.Lat`)",
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitude": {
+          "description": "(query:`Geo.Lon`)",
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        }
+      }
+    }
+  }
+}

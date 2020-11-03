@@ -1,0 +1,47 @@
+{
+  "name": "json-schema-defined-mapper",
+  "version": "0.0.1",
+  "description": "create a mapper function using JMESPath to convert an object to a JSON the schema defines",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --cache --ext js index.js lib/ test/",
+    "test": "jest",
+    "cover": "npm test -- --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paclearner/json-schema-defined-mapper.git"
+  },
+  "keywords": [
+    "convert",
+    "converter",
+    "jmespath",
+    "json",
+    "jsonschema",
+    "mapper",
+    "object",
+    "schema"
+  ],
+  "author": "Junnosuke Moriya <pac.learner@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paclearner/json-schema-defined-mapper/issues"
+  },
+  "homepage": "https://github.com/paclearner/json-schema-defined-mapper#readme",
+  "dependencies": {
+    "clean-deep": "^3.4.0",
+    "commonmark": "^0.29.2",
+    "@gorillastack/jmespath": "^1.3.0",
+    "json-schema-ref-parser": "^9.0.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.12.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.0",
+    "jest": "^26.6.1"
+  },
+  "jest": {
+    "verbose": true
+  }
+}

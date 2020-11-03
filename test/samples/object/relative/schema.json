@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "description": "with query:`a.b`",
+  "properties": {
+    "ca": {
+      "description": "query:`c1`",
+      "type": "string"
+    },
+    "cb": {
+      "description": "query:`c2`",
+      "type": "string"
+    }
+  } 
+}

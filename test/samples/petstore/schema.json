@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "properties": {
+    "pets": {
+      "$ref": "#/definitions/Pets"
+    }
+  },
+  "definitions": {
+    "Pet": {
+      "required": [
+        "id",
+        "name"
+      ],
+      "properties": {
+        "id": {
+          "description": "query:`pet_id`",
+          "type": "integer",
+          "format": "int64"
+        },
+        "name": {
+          "description": "query:`pet_name.first`",
+          "type": "string"
+        },
+        "tag": {
+          "description": "query:`pet_type`",
+          "type": "string"
+        }
+      }
+    },
+    "Pets": {
+      "description": "Pets are extraced from query:`response.results`",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Pet"
+      }
+    }
+  }
+}

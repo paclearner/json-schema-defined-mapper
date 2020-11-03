@@ -1,0 +1,19 @@
+{
+  "title": "Person (https://json-schema.org/learn/miscellaneous-examples.html)",
+  "type": "object",
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "description": "The person's first name. (query:```member.name.first```)"
+    },
+    "lastName": {
+      "type": "string",
+      "description": "The person's last name. (query:```member.name.last```)"
+    },
+    "age": {
+      "description": "Age in years which must be equal to or greater than zero. (query:```member.age```)",
+      "type": "integer",
+      "minimum": 0
+    }
+  }
+}

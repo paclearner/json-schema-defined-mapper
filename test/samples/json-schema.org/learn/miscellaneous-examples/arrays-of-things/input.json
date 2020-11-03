@@ -1,0 +1,27 @@
+[
+  {
+    "type": "fruit",
+    "name": "apple",
+    "like": true
+  },
+  {
+    "type": "fruit",
+    "name": "orange",
+    "like": true
+  },
+  {
+    "type": "fruit",
+    "name": "pear",
+    "like": false
+  },
+  {
+    "type": "vegetable",
+    "name": "potato",
+    "like": true
+  },
+  {
+    "type": "vegetable",
+    "name": "broccoli",
+    "like": false
+  }
+]

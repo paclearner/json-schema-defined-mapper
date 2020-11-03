@@ -1,0 +1,7 @@
+{
+  "anyOf": [
+    { "type": "object", "properties": { "R": { "type": "number", "description": "query:`color.red`" }}},
+    { "type": "object", "properties": { "G": { "type": "number", "description": "query:`color.green`" }}},
+    { "type": "object", "properties": { "B": { "type": "number", "description": "query:`color.blue`" }}}
+  ]
+}

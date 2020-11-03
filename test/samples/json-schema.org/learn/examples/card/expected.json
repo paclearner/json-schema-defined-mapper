@@ -1,0 +1,8 @@
+{
+  "familyName": "Doe",
+  "givenName": "John",
+  "org": {
+    "organizationName": "Foo",
+    "organizationUnit": "Bar"
+  }
+}

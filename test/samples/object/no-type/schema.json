@@ -1,0 +1,13 @@
+{
+  "description": "no type",
+  "properties": {
+    "a": {
+      "description": "query:`A`",
+      "type": "string"
+    },
+    "b": {
+      "description": "query:`B`",
+      "type": "string"
+    }
+  } 
+}

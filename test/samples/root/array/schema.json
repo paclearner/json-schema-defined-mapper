@@ -1,0 +1,8 @@
+{
+  "type": "array",
+  "description": "extraced from query:`[*]` for array",
+  "items": {
+    "type": "string",
+    "description": "extraced from query:`@` for items"
+  }
+}

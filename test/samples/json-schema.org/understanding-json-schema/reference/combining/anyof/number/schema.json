@@ -1,0 +1,7 @@
+{
+  "title": "https://json-schema.org/understanding-json-schema/reference/combining.html#anyof",
+  "anyOf": [
+    { "type": "string", "maxLength": 5, "description": "query:`str`" },
+    { "type": "number", "minimum": 0, "description": "query:`num`" }
+  ]
+}

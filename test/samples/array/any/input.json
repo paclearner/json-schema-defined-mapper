@@ -1,0 +1,4 @@
+[
+  { "user": { "age": 10, "name": "John" } },
+  { "user": { "age": 20, "name": "Eric" } }
+]

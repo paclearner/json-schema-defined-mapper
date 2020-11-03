@@ -1,0 +1,7 @@
+{
+  "description": "allOf returns the first valid value even though the entire value does not satisfy the schema",
+  "allOf": [
+    { "type": "string", "description": "query:`str`" },
+    { "type": "number", "description": "query:`num`" }
+  ]
+}

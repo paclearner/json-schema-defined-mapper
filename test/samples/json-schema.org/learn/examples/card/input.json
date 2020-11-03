@@ -1,0 +1,10 @@
+{
+  "Name": {
+    "family": "Doe",
+    "given": "John"
+  },
+  "Organization": {
+    "organizationName": "Foo",
+    "organizationUnit": "Bar"
+  }
+}

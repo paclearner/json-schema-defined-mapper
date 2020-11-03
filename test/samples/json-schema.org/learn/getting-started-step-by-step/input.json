@@ -1,0 +1,33 @@
+{
+  "shopItem": {
+    "id": 1,
+    "title": "An ice sculpture",
+    "charge": {
+      "price": 12.50,
+      "cost": 10.25
+    },
+    "prop": {
+      "length": 7.0,
+      "width": 12.0,
+      "height": 9.5,
+      "tags": [
+        "cold",
+        "ice"
+      ]
+    },
+    "shop": [
+      {
+        "location": {
+          "latitude": -78.75,
+          "longitude": 20.4
+        }
+      },
+      {
+        "location": {
+          "latitude": 20.4,
+          "longitude": -78.75
+        }
+      }
+    ]
+  }
+}

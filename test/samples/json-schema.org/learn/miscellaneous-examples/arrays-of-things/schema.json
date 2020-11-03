@@ -1,0 +1,36 @@
+{
+  "title": "https://json-schema.org/learn/miscellaneous-examples.html",
+  "description": "A representation of a person, company, organization, or place",
+  "type": "object",
+  "properties": {
+    "fruits": {
+      "description": "query:```@[?type == `fruit`].name```",
+      "type": "array",
+      "items": {
+        "description": "query:```@```",
+        "type": "string"
+      }
+    },
+    "vegetables": {
+      "description": "query:```@[?type == `vegetable`]```",
+      "type": "array",
+      "items": { "$ref": "#/definitions/veggie" }
+    }
+  },
+  "definitions": {
+    "veggie": {
+      "type": "object",
+      "required": [ "veggieName", "veggieLike" ],
+      "properties": {
+        "veggieName": {
+          "type": "string",
+          "description": "The name of the vegetable. query:```@.name```"
+        },
+        "veggieLike": {
+          "type": "boolean",
+          "description": "Do I like this vegetable? query:```@.like```"
+        }
+      }
+    }
+  }
+}

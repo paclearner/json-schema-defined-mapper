@@ -1,0 +1,23 @@
+{
+  "definitions": {
+    "address": {
+      "type": "object",
+      "properties": {
+        "street_address": { "type": "string", "description": "query:`Street`"  },
+        "city":           { "type": "string", "description": "query:`City`"  },
+        "state":          { "type": "string", "description": "query:`State`"  }
+      },
+      "required": ["street_address", "city", "state"]
+    }
+  },
+
+  "allOf": [
+    { "$ref": "#/definitions/address" },
+    { "properties": {
+        "type": { "enum": [ "residential", "business" ], "description": "query:`Type`" }
+      }
+    }
+  ],
+
+  "additionalProperties": false
+}

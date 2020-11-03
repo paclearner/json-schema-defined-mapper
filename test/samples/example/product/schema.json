@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "ProductID": {
+      "description": "query:`prod.id`",
+      "type": "string"
+    },
+    "Price": {
+      "description": "The price of the product (query:`prod.price[0]`)",
+      "type": "number"
+    },
+    "NumOfParts": {
+      "description": "query:```prod.parts[] | length(@)``` is the number of the parts",
+      "type": "integer"
+    }
+  }
+}

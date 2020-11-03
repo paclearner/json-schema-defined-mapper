@@ -1,0 +1,7 @@
+{
+  "title": "https://json-schema.org/understanding-json-schema/reference/combining.html#allof",
+  "allOf": [
+    { "type": "string", "description": "query:`str`" },
+    { "maxLength": 5 }
+  ]
+}

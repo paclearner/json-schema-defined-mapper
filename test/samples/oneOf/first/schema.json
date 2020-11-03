@@ -1,0 +1,6 @@
+{
+  "oneOf": [
+    { "type": "number", "multipleOf": 5, "description": "query:`multiple.five`" },
+    { "type": "number", "multipleOf": 3, "description": "query:`multiple.three`" }
+  ]
+}

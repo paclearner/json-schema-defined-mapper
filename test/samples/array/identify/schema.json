@@ -1,0 +1,12 @@
+{
+  "description": "identify items query:`[*]`",
+  "type": "array",
+  "items": {
+    "age": {
+      "type": "number"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

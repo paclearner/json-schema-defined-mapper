@@ -1,0 +1,20 @@
+{
+  "description": "no type query:`[*]`",
+  "items": {
+    "type": "object",
+    "properties": {
+      "age": {
+        "type": "number",
+        "description": "query:```user.age```"
+      },
+      "name": {
+        "type": "string",
+        "description": "query:```user.name```"
+      },
+      "memo": {
+        "type": "string",
+        "required": false
+      }
+    }
+  } 
+}

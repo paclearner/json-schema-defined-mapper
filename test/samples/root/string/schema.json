@@ -1,0 +1,6 @@
+{
+  "description": "extraced from query:```a.b.c.d```",
+  "type": "string",
+  "minLength": 3,
+  "maxLength": 20
+}

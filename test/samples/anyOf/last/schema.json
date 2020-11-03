@@ -1,0 +1,6 @@
+{
+  "anyOf": [
+    { "type": "string", "description": "query:`object.str`" },
+    { "type": "number", "description": "query:`object.num`" }
+  ]
+}

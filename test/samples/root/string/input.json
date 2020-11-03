@@ -1,0 +1,9 @@
+{
+  "a": {
+    "b": {
+      "c": {
+        "d": "a expected string value"
+      }
+    }
+  }
+}

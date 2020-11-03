@@ -1,0 +1,7 @@
+{
+  "title": "https://json-schema.org/understanding-json-schema/reference/combining.html#oneof",
+  "oneOf": [
+    { "type": "number", "multipleOf": 5, "description": "query:`a`" },
+    { "type": "number", "multipleOf": 3, "description": "query:`b`"  }
+  ]
+}

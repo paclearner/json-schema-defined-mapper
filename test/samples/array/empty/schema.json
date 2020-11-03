@@ -1,0 +1,7 @@
+{
+  "description": "no array result query:`no_array_query`",
+  "items": {
+    "type": "number",
+    "description": "query:```nothing```"
+  } 
+}

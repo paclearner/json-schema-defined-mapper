@@ -1,0 +1,11 @@
+{
+  "prod": {
+    "id": "R2D2",
+    "price": [ 1000000, 2000000, 3000000 ],
+    "parts": [
+      { "name": "head" },
+      { "name": "legs" },
+      { "name": "body" }
+    ]
+  }
+}

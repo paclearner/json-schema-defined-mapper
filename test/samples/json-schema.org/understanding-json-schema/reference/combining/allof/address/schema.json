@@ -1,0 +1,22 @@
+{
+  "title": "https://json-schema.org/understanding-json-schema/reference/combining.html#allof",
+  "definitions": {
+    "address": {
+      "type": "object",
+      "properties": {
+        "street_address": { "type": "string", "description": "query:`club.address.street`" },
+        "city":           { "type": "string", "description": "query:`club.address.city`" },
+        "state":          { "type": "string", "description": "query:`club.address.state`" }
+      },
+      "required": ["street_address", "city", "state"]
+    }
+  },
+
+  "allOf": [
+    { "$ref": "#/definitions/address" },
+    { "properties": {
+        "type": { "enum": [ "residential", "business" ], "description": "query:`club.address.type`" }
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "title": "The house number list for my pets",
+  "description": "query:```[*]```",
+  "type": "array",
+  "items": {
+    "description": "query:`pet.house`",
+    "type": "number"
+  }
+}

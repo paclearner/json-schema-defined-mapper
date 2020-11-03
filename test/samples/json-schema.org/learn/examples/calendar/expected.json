@@ -1,0 +1,14 @@
+{
+  "dtstart": "2007-06-11T13:00:00Z",
+  "dtend": "2008-06-13T15:30:00Z",
+  "summary": "The Annual ACM Symposium on Theory of Computing (STOC)",
+  "location": "San Diego, CA, USA",
+  "url": "http://acm-stoc.org/stoc2007/",
+  "duration": "June 11-13, 2007",
+  "category": "ACM",
+  "description": "The Annual ACM Symposium on Theory of Computing (STOC), is the flagship conference of SIGACT, the Special Interest Group on Algorithms and Computation Theory, a special interest group of the Association for Computing Machinery (ACM). ",
+  "geo": {
+    "latitude": 32.715736,
+    "longitude": -117.161087
+  }
+}
