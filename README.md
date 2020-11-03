@@ -103,8 +103,8 @@ The expression `pet.house` at the second layer is evaluated for each element (ob
 
 A result of `oneOf`, `anyOf`, or `allOf` is extracted as follows:
 
-* `oneOf`: returns a first non-falsy value in the array.
-* `anyOf` and `allOf`: returns a composite object if an object type is found in the array. If not, returns a first non-falsy value in the array.
+* `oneOf`: returns the first non-null value in the condition array.
+* `anyOf` and `allOf`: returns the composite object if an object type is found in the condition array; otherwise, returns a first non-null value in the array.
 
 ## Not Supported
 
