@@ -116,7 +116,7 @@ A result of `oneOf`, `anyOf`, or `allOf` is extracted as follows:
 
 ## More examples
 
-Please see [samples](https://github.com/paclearner/json-schema-defined-mapper/tree/master/test/samples):
+Please see [the samples](https://github.com/paclearner/json-schema-defined-mapper/tree/main/test/samples):
 
 * `*.schema.json`: the JSON schema file.
 * `*.input.json`: an input for the mapper which the schema creates.
