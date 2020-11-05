@@ -1,9 +1,9 @@
 # json-schema-defined-mapper
 
 This module creates a mapper function using [JMESPath](http://jmespath.org) to convert an object to a JSON the schema defines.
-You can write a JMESPath expression in the `description` to extract the defined data against the input data.
-A JMESPath expression can be describe in [Extended Markdown's](https://www.markdownguide.org/extended-syntax/#fenced-code-blocks) code block syntax with th prefix "`query:`".
-The body of the expression must be enclosed a single backtick (\`) or three backticks (\`\`\`).
+You can write a JMESPath expression in `description` to extract the defined data against the input data.
+[Code blocks](https://www.markdownguide.org/basic-syntax/#code) in [Markdown](https://daringfireball.net/projects/markdown/) with th prefix "`query:`" allow you to define the JMESPath expression in `description`.
+Thus, the body of the expression must be wrapped with backtick quotes (\`).
 
 The JSON schema example:
 
@@ -30,15 +30,15 @@ The JSON schema example:
 To create a mapper function and execute the mapper against the input object:
 
 ```js
-const createMapper = require('json-schema-defined-mapper');
+const mapper = require('json-schema-defined-mapper');
 
 try {
-  const mapper = await createMapper(schema);
+  const product = await mapper(schema);
 } catch (e) {
   console.log(e);
 }
 
-console.log(mapper(
+console.log(product(
 {
   prod: {
     id: 'R2D2',
@@ -84,9 +84,9 @@ The JSON schema example:
 The mapper from the above schema:
 
 ```js
-const createMapper = require('json-schema-defined-mapper');
+const mapper = require('json-schema-defined-mapper');
 
-const houseList = await createMapper(schema);
+const houseList = await mapper(schema);
 console.log(houseList(
 [
   { pet: { name: 'Adele', house: 5 } },
@@ -106,7 +106,7 @@ A result of `oneOf`, `anyOf`, or `allOf` is extracted as follows:
 * `oneOf`: returns the first non-null value in the condition array.
 * `anyOf` and `allOf`: returns the composite object if an object type is found in the condition array; otherwise, returns a first non-null value in the array.
 
-## Not Supported
+## Not supported
 
 * Object:
   * [Property names](https://json-schema.org/understanding-json-schema/reference/object.html#property-names) and [Pattern Properties](https://json-schema.org/understanding-json-schema/reference/object.html#pattern-properties)
