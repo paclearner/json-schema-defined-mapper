@@ -24,9 +24,9 @@ const samplesDirs = (root) => fs.readdirSync(root, { withFileTypes: true })
     return [current].concat(samplesDirs(current));
   });
 
-describe('created mappers in samples', () => {
+describe('mappers in samples', () => {
   samplesDirs('./test/samples').forEach((p) => {
-    it(`should return ${p}/expected.json`, async () => {
+    test(`should return ${p}/expected.json`, async () => {
       const { schema, input, expected } = readSample(p);
       const f = await mapper(schema);
       const acctual = await f(input);
